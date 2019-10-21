@@ -1,15 +1,9 @@
-import pandas as pd
-import numpy as np
 import re
-# from collections import defaultdict
-# import tensorflow as tf
-# import tensorflow.keras as K
 
 def n_gram(arr, n):
     return zip(*(arr[_:] for _ in range(n)))
 
 d = dict()
-# dd = defaultdict(list)
 with open("Extra Material 2 - keyword list_with substring.csv") as f:
 	f.readline()
 	for line in f:
@@ -55,7 +49,6 @@ with open("Keyword_spam_question.csv", encoding="utf8") as f:
 			out_file += f'{idx},{list(out)}\n'
 		else:
 			out_file += f'{idx},"{sorted(out)}"\n'
-		# break
 
 with open("out.csv", 'w', encoding="utf8") as f:
 	f.write(out_file)

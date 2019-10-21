@@ -1,6 +1,3 @@
-import pandas as pd
-import numpy as np
-from itertools import chain
 from collections import defaultdict, deque
 
 usr_ba = defaultdict(set)
@@ -59,13 +56,11 @@ with open("orders.csv") as f:
 		while len(q) > 0:
 			user = q.popleft()
 			if isfraud(user,sell,usr_ba,ba_usr,visited,q) or isfraud(user,sell,usr_cc,cc_usr,visited,q) or isfraud(user,sell,usr_d,d_usr,visited,q):
-				# print(buy,sell,"\n")
 				fraud = True
 				break
 
 		out_file += "1" if fraud else "0"
 		out_file += "\n"
-		# break
 
 with open("out.csv", "w", encoding="utf8") as f:
 	f.write(out_file)
