@@ -2,7 +2,7 @@
 Codes from the Champion Team (team name: Mentaiko Salmon) in the Undergraduate Category
 
 ## Team Members of Mentaiko Salmon
-1. Walter Kong (https://github.com/walltail) (me!)
+1. Walter Kong (https://github.com/k-walter) (me!)
 2. Christopher Goh Zhen Fung (https://github.com/chrisgzf)
 
 ## Challenges
